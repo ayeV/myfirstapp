@@ -15,8 +15,12 @@ export class AppComponent {
 
   Calcular()
   {
-    this.suma = this.edad1 + this.edad2;
-    this.promedio = (this.edad2 +this.edad1) / 2
+    if(this.edad1 > 0 && this.edad2 > 0)
+    {
+      this.suma = this.edad1 + this.edad2;
+      this.promedio = (this.edad2 +this.edad1) / 2
+    }
+   
   }
 
   Limpiar()
